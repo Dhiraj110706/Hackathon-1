@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Attendance</h1>
+    </header>
+    <main>
+        <form id="attendanceForm">
+            <input type="text" id="user_id" placeholder="User ID" required>
+            <input type="date" id="date" required>
+            <select id="status" required>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button type="submit">Submit Attendance</button>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
