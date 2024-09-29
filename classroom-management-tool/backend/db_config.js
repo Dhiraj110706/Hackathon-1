@@ -1,9 +1,9 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: 'dhiraj',
-    host: 'localhost',
-    database: 'classroom_management_tool',
+    user: 'root',
+    host: 'lodalhost',
+    database: 'classroom_management',
     password: '1107',
     port: 5432,
 });

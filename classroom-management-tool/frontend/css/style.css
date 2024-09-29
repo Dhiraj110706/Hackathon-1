@@ -1,61 +1,114 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background: #007BFF;
-    color: white;
-    padding: 10px 20px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-form {
-    margin-top: 20px;
-}
-
-input, select, button {
-    margin: 5px 0;
-    padding: 10px;
-    width: 100%;
-}
-
-button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-}
-
-h1 {
-    color: #343a40;
-}
-
+/* Navbar */
 .navbar {
     margin-bottom: 20px;
+    background-color: #007bff;
 }
 
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700;
+}
+
+/* Container */
 .container {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: border-color 0.3s;
+    padding: 10px; /* Add padding for better appearance */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+/* Placeholder Styles */
+::placeholder {
+    color: #999; /* Placeholder text color */
+    opacity: 1; /* Firefox lowers the opacity of placeholder text */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add border-radius */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* List Group */
+.list-group-item {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set a fixed height */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        text-align: center;
+    }
 }
